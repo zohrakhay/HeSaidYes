@@ -8,12 +8,16 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { DressesComponent } from './dresses/dresses.component';
-import { DressItemComponent } from './dress-item/dress-item.component';
-import { DressesListComponent } from './dresses-list/dresses-list.component';
+import { DressItemComponent } from './dresses/dress-item/dress-item.component';
+import { DressesListComponent } from './dresses/dresses-list/dresses-list.component';
 import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
 import { ItemComponent } from './honey-moon/item/item.component';
 import { HotelsListComponent } from './honey-moon/hotels-list/hotels-list.component';
 import { FormsModule } from '@angular/forms';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { SuitsComponent } from './suits/suits.component';
+import { SuitItemComponent } from './suits/suit-item/suit-item.component';
+import { SuitsListComponent } from './suits/suits-list/suits-list.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { FormsModule } from '@angular/forms';
     DressesListComponent,
     HoneyMoonComponent,
     ItemComponent,
-    HotelsListComponent
+    HotelsListComponent,
+    ReviewsComponent,
+    SuitsComponent,
+    SuitItemComponent,
+    SuitsListComponent
   ],
   imports: [
     BrowserModule,
