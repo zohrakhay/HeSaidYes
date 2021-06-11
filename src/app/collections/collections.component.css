@@ -3,6 +3,9 @@
   background-size: cover;
   background-position: center center;
 }
+.row gx-5 {
+  margin: 600px;
+}
 .primary-btn:after {
   position: absolute;
   left: 0;
@@ -22,4 +25,23 @@
   letter-spacing: 2px;
   font-weight: 700;
   position: relative;
+}
+.dressesSum {
+  height: 20%;
+}
+.dressesSum img {
+  height: 50%;
+  width: 80%;
+  border-radius: 45%;
+}
+.container px-5 {
+  height: 10%;
+}
+.container-item {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.dressesSum h2 {
+  text-align: center;
+  padding-top: 50 px;
 }
