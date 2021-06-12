@@ -18,10 +18,7 @@ export class SuitsListComponent implements OnInit {
       name: 'Suit  8',
       src: 'assets/Images/Suits/2.jpg',
     },
-    {
-      name: 'Suit  9',
-      src: 'assets/Images/Suits/3.jfif',
-    },
+
     {
       name: 'Suit  10',
       src: 'assets/Images/Suits/4.png',
@@ -30,10 +27,7 @@ export class SuitsListComponent implements OnInit {
       name: 'Suit  7',
       src: 'assets/Images/Suits/5.jfif',
     },
-    {
-      name: 'Suit  8',
-      src: 'assets/Images/Suits/6.jpg',
-    },
+
     {
       name: 'Suit 9',
       src: 'assets/Images/Suits/7.jfif',
@@ -54,10 +48,7 @@ export class SuitsListComponent implements OnInit {
       name: 'Suit  9',
       src: 'assets/Images/Suits//10.jfif',
     },
-    {
-      name: 'Suit  10',
-      src: 'assets/Images/Suits//11.jfif',
-    },
+
   ];
   constructor() { }
 

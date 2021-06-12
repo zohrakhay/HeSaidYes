@@ -18,6 +18,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { SuitsComponent } from './suits/suits.component';
 import { SuitItemComponent } from './suits/suit-item/suit-item.component';
 import { SuitsListComponent } from './suits/suits-list/suits-list.component';
+import { ModalContentComponent } from './modal-content/modal-content.component';
+import { ModalComponentComponent } from './modal-component/modal-component.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { SuitsListComponent } from './suits/suits-list/suits-list.component';
     ReviewsComponent,
     SuitsComponent,
     SuitItemComponent,
-    SuitsListComponent
+    SuitsListComponent,
+    ModalContentComponent,
+    ModalComponentComponent
   ],
   imports: [
     BrowserModule,
