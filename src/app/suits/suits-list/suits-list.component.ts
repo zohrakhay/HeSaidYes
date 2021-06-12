@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-suits-list',
@@ -6,7 +6,59 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./suits-list.component.css']
 })
 export class SuitsListComponent implements OnInit {
+  @Output() suit: any;
 
+  suits = [
+
+    {
+      name: 'Suit 7',
+      src: 'assets/Images/Suits/1.jpg',
+    },
+    {
+      name: 'Suit  8',
+      src: 'assets/Images/Suits/2.jpg',
+    },
+    {
+      name: 'Suit  9',
+      src: 'assets/Images/Suits/3.jfif',
+    },
+    {
+      name: 'Suit  10',
+      src: 'assets/Images/Suits/4.png',
+    },
+    {
+      name: 'Suit  7',
+      src: 'assets/Images/Suits/5.jfif',
+    },
+    {
+      name: 'Suit  8',
+      src: 'assets/Images/Suits/6.jpg',
+    },
+    {
+      name: 'Suit 9',
+      src: 'assets/Images/Suits/7.jfif',
+    },
+    {
+      name: 'Suit  10',
+      src: 'assets/Images/Suits/8.jfif',
+    },
+    {
+      name: 'Suit  7',
+      src: 'assets/Images/Suits/9.jfif',
+    },
+    {
+      name: 'Suit  8',
+      src: 'assets/Images/Suits/8.jpg',
+    },
+    {
+      name: 'Suit  9',
+      src: 'assets/Images/Suits//10.jfif',
+    },
+    {
+      name: 'Suit  10',
+      src: 'assets/Images/Suits//11.jfif',
+    },
+  ];
   constructor() { }
 
   ngOnInit(): void {
