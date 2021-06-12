@@ -8,13 +8,19 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { DressesComponent } from './dresses/dresses.component';
-import { DressItemComponent } from './dress-item/dress-item.component';
-import { DressesListComponent } from './dresses-list/dresses-list.component';
+import { DressItemComponent } from './dresses/dress-item/dress-item.component';
+import { DressesListComponent } from './dresses/dresses-list/dresses-list.component';
 import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
 import { ItemComponent } from './honey-moon/item/item.component';
 import { HotelsListComponent } from './honey-moon/hotels-list/hotels-list.component';
 import { FormsModule } from '@angular/forms';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { SuitsComponent } from './suits/suits.component';
+import { SuitItemComponent } from './suits/suit-item/suit-item.component';
+import { SuitsListComponent } from './suits/suits-list/suits-list.component';
+import { ModalContentComponent } from './modal-content/modal-content.component';
+import { ModalComponentComponent } from './modal-component/modal-component.component';
 
 
 @NgModule({
@@ -29,7 +35,13 @@ import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
     HoneyMoonComponent,
     ItemComponent,
     HotelsListComponent,
-    HotelDetailsComponent
+    HotelDetailsComponent,
+    ReviewsComponent,
+    SuitsComponent,
+    SuitItemComponent,
+    SuitsListComponent,
+    ModalContentComponent,
+    ModalComponentComponent
   ],
   imports: [
     BrowserModule,

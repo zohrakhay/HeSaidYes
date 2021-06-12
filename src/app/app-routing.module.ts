@@ -4,8 +4,13 @@ import { CollectionsComponent } from './collections/collections.component';
 import { DressesComponent } from './dresses/dresses.component';
 import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { SuitsComponent } from './suits/suits.component';
 
 const routes: Routes = [
+  {
+    path: 'honey-moon',
+    component : HoneyMoonComponent
+  },
 
 
 {
@@ -23,7 +28,12 @@ const routes: Routes = [
 {
   path: 'hotel-details',
   component : HotelDetailsComponent
+},
+{
+  path: 'suits',
+  component : SuitsComponent
 }
+
 
 ];
 
