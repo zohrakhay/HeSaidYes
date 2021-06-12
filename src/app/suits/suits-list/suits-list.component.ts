@@ -12,41 +12,41 @@ export class SuitsListComponent implements OnInit {
 
     {
       name: 'Suit 7',
-      src: 'assets/Images/Suits/1.jpg',
+      src: 'assets/img/Suits/1.jpg',
     },
     {
       name: 'Suit  8',
-      src: 'assets/Images/Suits/2.jpg',
+      src: 'assets/img/Suits/2.jpg',
     },
 
     {
       name: 'Suit  10',
-      src: 'assets/Images/Suits/4.png',
+      src: 'assets/img/Suits/4.png',
     },
     {
       name: 'Suit  7',
-      src: 'assets/Images/Suits/5.jfif',
+      src: 'assets/img/Suits/5.jfif',
     },
 
     {
       name: 'Suit 9',
-      src: 'assets/Images/Suits/7.jfif',
+      src: 'assets/img/Suits/7.jfif',
     },
     {
       name: 'Suit  10',
-      src: 'assets/Images/Suits/8.jfif',
+      src: 'assets/img/Suits/8.jfif',
     },
     {
       name: 'Suit  7',
-      src: 'assets/Images/Suits/9.jfif',
+      src: 'assets/img/Suits/9.jfif',
     },
     {
       name: 'Suit  8',
-      src: 'assets/Images/Suits/8.jpg',
+      src: 'assets/img/Suits/8.jpg',
     },
     {
       name: 'Suit  9',
-      src: 'assets/Images/Suits//10.jfif',
+      src: 'assets/img/Suits//10.jfif',
     },
 
   ];

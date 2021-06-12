@@ -1,8 +1,9 @@
 .hero {
-  background-image: url("/assets/Images/Collections/2.jpg") !important;
+  background-image: url("/assets/img/Collections/collection-cover.jpg") !important;
   background-size: cover;
   background-position: center center;
 }
+
 .row gx-5 {
   margin: 600px;
 }
@@ -42,6 +43,10 @@
   margin-bottom: 100px;
 }
 .dressesSum h2 {
-  text-align: center;
+  padding-top: 50 px;
+  font-size: 45px;
+}
+.dressesSum a {
+  text-align: center center;
   padding-top: 50 px;
 }

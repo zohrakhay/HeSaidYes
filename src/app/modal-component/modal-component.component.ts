@@ -13,7 +13,7 @@ export class ModalComponentComponent implements OnInit {
 
 
 openModal(): void {
-    const modalRef = this.modalService.open(ModalContentComponent);
+    const modalRef = this.modalService.open(ModalContentComponent, { size: 'lg', backdrop: 'static' });
     modalRef.componentInstance.name = 'World';
   }
 

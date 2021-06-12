@@ -1,6 +1,7 @@
 .hero {
-  background-image: url("/assets/Images/Suits/suits-cover.jpg") !important;
+  background-image: url("/assets/img/Suits/suits-cover.jpg") !important;
   background-position: center center;
+  overflow: "hidden";
 }
 
 .title {

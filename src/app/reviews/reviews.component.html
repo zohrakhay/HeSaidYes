@@ -3,10 +3,15 @@
     <h4>Reviews</h4>
     <div class="review-item">
         <div class="ri-pic">
-            <img src="assets/Images/Reviews/avatar-2.jpg"alt="">
+            <img src="assets/img/Reviews/avatar-2.jpg"alt="">
         </div>
         <div class="ri-text">
             <span>27 Aug 2019</span>
+            <ngb-rating rate=5>
+              <ng-template let-fill="fill" let-index="index">
+                <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
+              </ng-template>
+            </ngb-rating>
             <h5>Brandon Kelley</h5>
             <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
                 adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et dolore
@@ -15,11 +20,15 @@
     </div>
     <div class="review-item">
         <div class="ri-pic">
-            <img src="assets/Images/Reviews/avatar-1.jpg" alt="">
+            <img src="assets/img/Reviews/avatar-1.jpg" alt="">
         </div>
         <div class="ri-text">
             <span>27 Aug 2019</span>
-
+            <ngb-rating rate=4>
+              <ng-template let-fill="fill" let-index="index">
+                <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
+              </ng-template>
+            </ngb-rating>
             <h5>Brandon Kelley</h5>
             <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
                 adipisci velit, sed quia non numquam eius modi tempora. incidunt ut labore et dolore
@@ -41,7 +50,11 @@
                 <div>
                   <div class="row">
                    <h5> You Rating:</h5>
-
+                   <ngb-rating rate=0>
+                    <ng-template let-fill="fill" let-index="index">
+                      <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
+                    </ng-template>
+                  </ngb-rating>
                 </div>
 
                 </div>

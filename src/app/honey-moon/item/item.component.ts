@@ -14,14 +14,11 @@ export class ItemComponent implements OnInit {
   constructor(config: NgbCarouselConfig, rtconfig: NgbRatingConfig) {
     config.interval = 1000000;
     config.wrap = false;
-    
     config.pauseOnHover = false;
    // config.showNavigationIndicators =false;
-   rtconfig.max = 5;
-   rtconfig.readonly = true;
-    
-    
-  
+    rtconfig.max = 5;
+    rtconfig.readonly = true;
+
    }
 
   ngOnInit(): void {
