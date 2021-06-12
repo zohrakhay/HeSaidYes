@@ -14,6 +14,7 @@ import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
 import { ItemComponent } from './honey-moon/item/item.component';
 import { HotelsListComponent } from './honey-moon/hotels-list/hotels-list.component';
 import { FormsModule } from '@angular/forms';
+import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     DressesListComponent,
     HoneyMoonComponent,
     ItemComponent,
-    HotelsListComponent
+    HotelsListComponent,
+    HotelDetailsComponent
   ],
   imports: [
     BrowserModule,
