@@ -12,11 +12,11 @@ export class SuitsListComponent implements OnInit {
 
     {
       name: 'Suit 7',
-      src: 'assets/img/Suits/1.jpg',
+      src: 'assets/img/Suits/10.jfif',
     },
     {
       name: 'Suit  8',
-      src: 'assets/img/Suits/2.jpg',
+      src: 'assets/img/Suits/12.jfif',
     },
 
     {
@@ -46,7 +46,11 @@ export class SuitsListComponent implements OnInit {
     },
     {
       name: 'Suit  9',
-      src: 'assets/img/Suits//10.jfif',
+      src: 'assets/img/Suits//11.jfif',
+    },
+    {
+      name: 'Suit  9',
+      src: 'assets/img/Suits//1.jpg',
     },
 
   ];
