@@ -5,6 +5,8 @@ import { DressesComponent } from './dresses/dresses.component';
 import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { SuitsComponent } from './suits/suits.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -22,19 +24,21 @@ const routes: Routes = [
   component : DressesComponent
 },
 {
-  path: 'honey-moon',
-  component : HoneyMoonComponent
-},
-{
   path: 'hotel-details',
   component : HotelDetailsComponent
 },
 {
   path: 'suits',
   component : SuitsComponent
+},
+{
+  path: 'home',
+  component : HomeComponent
+},
+{
+  path: 'contact',
+  component : ContactComponent
 }
-
-
 ];
 
 @NgModule({

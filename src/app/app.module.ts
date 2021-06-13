@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +20,8 @@ import { SuitItemComponent } from './suits/suit-item/suit-item.component';
 import { SuitsListComponent } from './suits/suits-list/suits-list.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
 import { ModalComponentComponent } from './modal-component/modal-component.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -41,7 +42,9 @@ import { ModalComponentComponent } from './modal-component/modal-component.compo
     SuitItemComponent,
     SuitsListComponent,
     ModalContentComponent,
-    ModalComponentComponent
+    ModalComponentComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
