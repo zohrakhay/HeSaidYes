@@ -7,7 +7,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./honey-moon.component.css']
 })
 export class HoneyMoonComponent implements OnInit {
-  model:NgbDateStruct;
+  model: NgbDateStruct;
   constructor() { }
 
   ngOnInit(): void {
