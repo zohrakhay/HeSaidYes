@@ -6,7 +6,7 @@ import { Hotel } from '../models/hotel';
   selector: 'app-hotel-details',
   templateUrl: './hotel-details.component.html',
   styleUrls: ['./hotel-details.component.css'],
-  providers:[NgbCarouselConfig]
+  providers: [NgbCarouselConfig]
 })
 export class HotelDetailsComponent implements OnInit {
 
@@ -17,7 +17,6 @@ export class HotelDetailsComponent implements OnInit {
 
 
   constructor(config: NgbCarouselConfig) {
-    
    }
 
   ngOnInit(): void {
