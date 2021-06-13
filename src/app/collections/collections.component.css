@@ -27,10 +27,10 @@
   font-weight: 700;
   position: relative;
 }
-.dressesSum {
+.collectionSum {
   height: 20%;
 }
-.dressesSum img {
+.collectionSum img {
   height: 50%;
   width: 80%;
   border-radius: 45%;
@@ -42,11 +42,11 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.dressesSum h2 {
+.collectionSum h2 {
   padding-top: 50 px;
   font-size: 45px;
 }
-.dressesSum a {
+.collectionSum a {
   text-align: center center;
   padding-top: 50 px;
 }
