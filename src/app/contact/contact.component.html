@@ -1,19 +1,54 @@
 
+<style>
+  .banner {
+    background:linear-gradient(to left, #cae6dd, #c8cae6);
+  }
+  .form-control{
+    background:#F2F2F2;
+    border-radius:0px;
+    border:none;
+  }
+</style>
 
-<form action="">
-  <div class="field">
-    <label class="label">Name</label>
-    <div class="control">
-      <input class="input" type="text" placeholder="e.g User User">
-    </div>
+
+<div class="banner">
+  <div class="container p-5">
+  <h5 class="pb-4"></h5>
+ <div class="card mx-3 mt-n5 shadow-lg" style="border-radius:0px; border:none">
+  <div class="card-body p-5">
+    <h4 class="card-title mb-3 text-dark text-uppercase" style="font-weight:700">Contact Us</h4>
+
+    <form  #contactForm="ngForm">
+      <div class="row">
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingTextInput1" placeholder="name" [(ngModel)]="name"
+            #nameInput="ngModel" required>
+            <label for="floatingTextInput1">Full Name</label>
+          </div>
+        </div>
+
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingEmailInput" placeholder="name@example.com">
+        <label for="floatingEmailInput" [(ngModel)]="email"
+        #emailInput="ngModel" required>Email address</label>
+      </div>
+      <div class="form-check form-switch mb-3">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">I agree to the Terms and Conditions of this Website.</label>
+      </div>
+
+    <button
+    [disabled]="contactForm.invalid"
+
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
+
+    </form>
   </div>
-
-  <div class="field">
-    <label class="label">Email</label>
-    <div class="control">
-      <input class="input" type="email" placeholder="e.g. username@gmail.com">
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit</button>
-</form>
-
+</div>
+</div>
+</div>
