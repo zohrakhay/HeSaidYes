@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { Hotel } from '../models/hotel';
 
 @Component({
   selector: 'app-honey-moon',
@@ -8,9 +9,11 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HoneyMoonComponent implements OnInit {
   model: NgbDateStruct;
+  hotels: Hotel[];
+  location:any;
   constructor() { }
 
   ngOnInit(): void {
-  }
+     }
 
 }

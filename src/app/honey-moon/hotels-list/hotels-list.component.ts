@@ -9,7 +9,7 @@ import { Hotel } from 'src/app/models/hotel';
 export class HotelsListComponent implements OnInit {
 
   @Output()  hotel: Hotel;
-hotels = [
+  @Output()hotels = [
   {
     name: 'Thalasso douz',
     src1: './assets/img/bedrooms/pexels-jonathan-borba-3144580.jpg',
@@ -94,6 +94,7 @@ hotels = [
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
