@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { AuthentificationService } from '../services/authentification/authentification.service';
 
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.css'],
-  providers:[NgbRatingConfig]
+  providers: [NgbRatingConfig]
 })
 export class ReviewsComponent implements OnInit {
-
-  constructor(rtconfig: NgbRatingConfig) {
+  constructor(rtconfig: NgbRatingConfig, public  authentificationService: AuthentificationService) {
     rtconfig.max = 5;
     rtconfig.readonly = true;
    }

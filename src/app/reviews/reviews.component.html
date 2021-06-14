@@ -36,7 +36,7 @@
         </div>
     </div>
 </div>
-<div class="review-add">
+<div class="review-add" *ngIf="authentificationService.isAuthentificated()" >
     <h4>Add Review</h4>
     <form action="#" class="ra-form">
         <div class="row">

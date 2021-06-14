@@ -37,9 +37,16 @@
           Contact
         </a>
 
-          <a routerLink="/login"class="navbar-item">
+          <a  *ngIf="!authentificationService.isAuthentificated()"  routerLink="/login" class="navbar-item">
           Login
           </a>
+          <a
+          *ngIf="authentificationService.isAuthentificated()"
+          class="navbar-item"
+          (click)="logOut()"
+          >
+            LogOut
+            </a>
 
       </div>
 
