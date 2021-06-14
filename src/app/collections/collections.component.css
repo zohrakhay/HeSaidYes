@@ -3,7 +3,9 @@
   background-size: cover;
   background-position: center center;
 }
-
+.hero title {
+  text-align: center center center center;
+}
 .row gx-5 {
   margin: 600px;
 }

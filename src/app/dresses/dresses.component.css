@@ -1,6 +1,8 @@
 .hero {
   background-image: url("/assets/img/Dresses/SayYesToTheDress.webp") !important;
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
