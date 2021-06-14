@@ -4,6 +4,7 @@ import { CollectionsComponent } from './collections/collections.component';
 import { DressesComponent } from './dresses/dresses.component';
 import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { LoginComponent } from './login/login.component';
 import { SuitsComponent } from './suits/suits.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -13,7 +14,10 @@ const routes: Routes = [
     path: 'honey-moon',
     component : HoneyMoonComponent
   },
-
+  {
+    path: 'login',
+    component : LoginComponent
+  },
 
 {
   path: 'collections',

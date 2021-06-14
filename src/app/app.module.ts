@@ -22,6 +22,7 @@ import { ModalContentComponent } from './modal-content/modal-content.component';
 import { ModalComponentComponent } from './modal-component/modal-component.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { ContactComponent } from './contact/contact.component';
     ModalContentComponent,
     ModalComponentComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
