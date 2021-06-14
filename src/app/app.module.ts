@@ -21,6 +21,7 @@ import { SuitItemComponent } from './suits/suit-item/suit-item.component';
 import { SuitsListComponent } from './suits/suits-list/suits-list.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
 import { ModalComponentComponent } from './modal-component/modal-component.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ModalComponentComponent } from './modal-component/modal-component.compo
     SuitItemComponent,
     SuitsListComponent,
     ModalContentComponent,
-    ModalComponentComponent
+    ModalComponentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
