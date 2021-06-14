@@ -129,3 +129,8 @@
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+
+.guests{
+	margin-bottom: 50px;
+    margin: 55px;
+}
