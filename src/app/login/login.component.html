@@ -36,7 +36,7 @@ Password must have min 4 characters
       <input type="checkbox" class="form-check-input" >
       <small>Remember Me</small>
     </label>
-    <button [disabled]="loginFormulaire.invalid"type="submit" class="btn btn-login float-right" >Submit</button>
+    <button [disabled]="loginFormulaire.invalid" type="submit" class="btn btn-login float-right" (click)="login()" >Submit</button>
   </div>
 
 </form>
