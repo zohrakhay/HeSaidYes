@@ -45,5 +45,9 @@
   "dress": {
     "dataSource": "MyDb",
     "public": true
+  },
+  "suit": {
+    "dataSource": "MyDb",
+    "public": true
   }
 }
