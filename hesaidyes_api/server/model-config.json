@@ -41,5 +41,9 @@
   "hotel": {
     "dataSource": "MyDb",
     "public": true
+  },
+  "dress": {
+    "dataSource": "MyDb",
+    "public": true
   }
 }
