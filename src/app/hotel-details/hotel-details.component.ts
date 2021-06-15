@@ -1,6 +1,9 @@
+import { identifierModuleUrl } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { ActivatedRoute, Router } from '@angular/router';
+import { NgbCarouselConfig, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Hotel } from '../models/hotel';
+import { HotelsListService } from '../services/hotels-list.service';
 
 @Component({
   selector: 'app-hotel-details',
@@ -10,30 +13,49 @@ import { Hotel } from '../models/hotel';
 })
 export class HotelDetailsComponent implements OnInit {
   @Input() hotels: Hotel[];
-  @Input() hotel: Hotel ={
-    name: 'Thalasso douz',
-    location:'douz',
-    src1: './assets/img/bedrooms/pexels-jonathan-borba-3144580.jpg',
-    src2: './assets/img/reception/pexels-helena-lopes-3215519.jpg',
-    src3: './assets/img/bathrooms/pexels-quark-studio-2507016.jpg',
-    src4: './assets/img/reception/pexels-helena-lopes-3215519.jpg',
-    src5: './assets/img/bathrooms/pexels-quark-studio-2507016.jpg',
-    stars: 4,
-    price: 500,
-    date_arrivée:'',
-    date_départ:'',
-  };
+  id;
+  @Input() hotel: Hotel;
     
   showNavigationArrows = false;
   showNavigationIndicators = false;
-  myimages=[this.hotel.src1, this.hotel.src2, this.hotel.src3 ];
+  myimages=[];
   images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
 
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig,rtconfig: NgbRatingConfig, private _Activatedroute:ActivatedRoute,
+    private _router:Router,private _HotelService:HotelsListService) {
+      rtconfig.max = 5;
+   rtconfig.readonly = true;
    }
 
-  ngOnInit(): void {
-  }
+   
+   sub;
+ 
+   ngOnInit():void {
+ 
+      this.sub=this._Activatedroute.paramMap.subscribe(params => { 
+         console.log(params);
+          this.id = params.get('id'); 
+          let hotels=this._HotelService.getHotels();
+          this.hotel=this._HotelService.getHotel(this.id); 
+          //this.hotel=this.hotels.find(p => p.id==this.id); 
+      
+            
+      });
+      console.log(this.id);
+      console.log(this.hotel);
+      
+      this.myimages=[this.hotel.src1, this.hotel.src2, this.hotel.src3, this.hotel.src4, this.hotel.src5];
 
+     
+
+}
+
+ngOnDestroy() {
+  this.sub.unsubscribe();
+}
+
+onBack(): void {
+   this._router.navigate(['honey-moon']);
+}
 }

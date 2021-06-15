@@ -1,4 +1,5 @@
 export class Hotel {
+    id:number;
     name:string;
     location:string;
     src1:string;
@@ -11,7 +12,8 @@ export class Hotel {
     date_arrivée:string;
     date_départ:string;
 
-    constructor(name="", location="",src1="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src2="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src3="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src4="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src5="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",stars=4, price=400, date_arrivée="25/06/2021", date_départ="28/06/2021"){
+    constructor(id=0, name="", location="",src1="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src2="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src3="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src4="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",src5="src/assets/img/bedrooms/pexels-la-miko-3754595.jpg",stars=4, price=400, date_arrivée="25/06/2021", date_départ="28/06/2021"){
+    this.id=id;
     this.name=name;
     this.location=location;
     this.src1=src1;
