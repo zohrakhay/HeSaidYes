@@ -4,17 +4,22 @@
     <div>
        <!--<img src="/assets/img/bedrooms/pexels-max-vakhtbovych-6284232.jpg" alt=""> -->
 
-       <ngb-carousel *ngIf= "images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
-        <ng-template ngbSlide *ngFor="let image of images">
+       <ngb-carousel *ngIf= "myimages" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+        <ng-template ngbSlide *ngFor="let image of myimages">
           <div class="picsum-img-wrapper">
             <img [src]="image" alt="Random slide">
           </div>
-          <div class="carousel-caption">
+         <!-- <div class="carousel-caption">
             <h3>No mouse navigation</h3>
             <p>This carousel hides navigation arrows and indicators.</p>
-          </div>
+          </div>-->
         </ng-template>
       </ngb-carousel>
+      <ngb-rating rate={{hotel.stars}}>
+        <ng-template let-fill="fill" let-index="index">
+          <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
+        </ng-template>
+      </ngb-rating>
       
       <hr>
       
@@ -25,13 +30,14 @@
     <!--TAHT E TASWIRA-->
     <div class="rd-text">
         <div class="rd-title">
-            <h3>Premium King Room</h3>
+            <h3>{{hotel.name}}</h3>
+            
             <div class="rdt-right">
                 <!--hot stars-->
-                <a href="#">Booking Now</a>
+                <a class='btn btn-default' (click)="onBack()">Back to Hotels List</a>
             </div>
         </div>
-        <h2>159$<span>/Pernight</span></h2>
+        <h2>{{hotel.price}}$<span>/Pernight</span></h2>
         <table>
             <tbody>
                 <tr>

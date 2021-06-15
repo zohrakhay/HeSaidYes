@@ -1,6 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { Hotel } from 'src/app/models/hotel';
+import { HotelsListService } from 'src/app/services/hotels-list.service';
 
 @Component({
   selector: 'app-hotels-list',
@@ -15,6 +16,7 @@ export class HotelsListComponent implements OnInit {
   @Output()  hotel: Hotel;
   @Output()hotels = [
   {
+    id:0,
     name: 'Thalasso douz',
     src1: './assets/img/bedrooms/pexels-jonathan-borba-3144580.jpg',
     src2: './assets/img/reception/pexels-helena-lopes-3215519.jpg',
@@ -28,6 +30,7 @@ export class HotelsListComponent implements OnInit {
 
   },
   {
+    id:1,
     name: 'Thalasso mannouba',
     src1: './assets/img/bedrooms/pexels-pixabay-164595.jpg',
     src2: './assets/img/reception/pexels-pixabay-53577.jpg',
@@ -40,6 +43,7 @@ export class HotelsListComponent implements OnInit {
     date_départ:'06/07/2021'
   },
   {
+    id:2,
     name: 'Thalasso marsa',
     src1: './assets/img/reception/pexels-helena-lopes-2017802.jpg',
     src2: './assets/img/bedrooms/pexels-max-vakhtbovych-6527060.jpg',
@@ -52,6 +56,7 @@ export class HotelsListComponent implements OnInit {
     date_départ:'11/08/2021'
   },
   {
+    id:3,
     name: 'Thalasso tozeur',
     src1: './assets/img/reception/random-institute-FDcydLvV7Io-unsplash.jpg',
     src2: './assets/img/bedrooms/pexels-pixabay-271618.jpg',
@@ -65,6 +70,7 @@ export class HotelsListComponent implements OnInit {
   },
 
   {
+    id:4,
     name: 'Thalasso tozeur',
     src1: './assets/img/reception/reisetopia-Vl5DAQxNBbM-unsplash.jpg',
     src2: './assets/img/bedrooms/pexels-max-vakhtbovych-6538888.jpg',
@@ -75,6 +81,7 @@ export class HotelsListComponent implements OnInit {
     price: 500
   },
   {
+    id:5,
     name: 'Thalasso tozeur',
     src1: './assets/img/reception/myhq-workspaces-Becc3eg9-l0-unsplash.jpg',
     src2: './assets/img/bedrooms/pexels-maria-orlova-4946767.jpg',
@@ -85,6 +92,7 @@ export class HotelsListComponent implements OnInit {
     price: 800
   },
   {
+    id:6,
     name: 'Thalasso tozeur',
     src1: './assets/img/reception/louis-hansel-wVoP_Q2Bg_A-unsplash.jpg',
     src2: './assets/img/bedrooms/pexels-castorly-stock-3682238.jpg',
@@ -94,6 +102,7 @@ export class HotelsListComponent implements OnInit {
     stars: 3
   },
   {
+    id:7,
     name: 'Thalasso tozeur',
     src1: './assets/img/reception/cloris-ying-QJMKyrud5l8-unsplash.jpg',
     src2: './assets/img/bedrooms/pexels-max-vakhtbovych-6284232.jpg',
@@ -104,7 +113,9 @@ export class HotelsListComponent implements OnInit {
   }
 ];
  
-  constructor() { }
+  constructor(private HotelService:HotelsListService) { 
+    this.hotels=this.HotelService.getHotels();
+  }
 
   ngOnInit(): void {
     

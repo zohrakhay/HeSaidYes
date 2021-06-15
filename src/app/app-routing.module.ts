@@ -38,7 +38,7 @@ const routes: Routes = [
   component : DressesComponent
 },
 {
-  path: 'hotel-details',
+  path: 'honey-moon/:id',
   component : HotelDetailsComponent
 },
 {
