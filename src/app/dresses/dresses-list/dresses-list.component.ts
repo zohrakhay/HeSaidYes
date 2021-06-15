@@ -1,4 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { Dress } from 'src/app/models/dress/dress';
+import { DressService } from 'src/app/services/dresses/dress.service';
 
 @Component({
   selector: 'app-dresses-list',
@@ -7,66 +9,21 @@ import { Component, OnInit, Output } from '@angular/core';
 })
 export class DressesListComponent implements OnInit {
   @Output() dress: any;
+  dresses: Dress[];
 
-  dresses = [
+  constructor(
 
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/7.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/8.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/9.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/10.jpg',
-    },
-
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/2.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/3.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/1.jfif',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/5.jfif',
-    },
-    {
-      name: 'Dress 10',
-      price: '300$',
-      src: 'assets/img/Dresses/4.jpg',
-    },
-
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/6.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/11.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Dresses/2.jfif',
-    },
-  ];
-
-
-  constructor() { }
+    private dressService: DressService
+  ) { }
 
   ngOnInit(): void {
-  }
+    this.dressService.getDresses().subscribe(
+       (dresses) => this.dresses = dresses
+
+
+
+
+    );
+    }
 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { Suit } from 'src/app/models/suit/suit';
+import { SuitService } from 'src/app/services/suits/suit.service';
 
 @Component({
   selector: 'app-suits-list',
@@ -8,55 +10,21 @@ import { Component, OnInit, Output } from '@angular/core';
 export class SuitsListComponent implements OnInit {
   @Output() suit: any;
 
-  suits = [
+  suits: Suit[];
 
-    {
-      price: '300$',
-      src: 'assets/img/Suits/10.jfif',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits/12.jfif',
-    },
+  constructor(
 
-    {
-      price: '300$',
-      src: 'assets/img/Suits/4.png',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits/5.jfif',
-    },
-
-    {
-      price: '300$',
-      src: 'assets/img/Suits/7.jfif',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits/8.jfif',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits/9.jfif',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits/8.jpg',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits//11.jfif',
-    },
-    {
-      price: '300$',
-      src: 'assets/img/Suits//1.jpg',
-    },
-
-  ];
-  constructor() { }
+    private suitService: SuitService
+  ) { }
 
   ngOnInit(): void {
-  }
+    this.suitService.getSuits().subscribe(
+       (suits) => this.suits = suits
+
+
+
+
+    );
+    }
 
 }
