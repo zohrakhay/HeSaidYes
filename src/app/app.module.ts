@@ -23,6 +23,8 @@ import { ModalComponentComponent } from './modal-component/modal-component.compo
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { SearchfilterPipe } from './searchfilter.pipe';
+import { SearchdatearrPipe } from './searchdatearr.pipe';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { LoginComponent } from './login/login.component';
     ModalComponentComponent,
     HomeComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    SearchfilterPipe,
+    SearchdatearrPipe
   ],
   imports: [
     BrowserModule,

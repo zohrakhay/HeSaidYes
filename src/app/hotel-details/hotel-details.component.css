@@ -133,4 +133,9 @@
 .guests{
 	margin-bottom: 50px;
     margin: 55px;
+	color: #19191a;
+  letter-spacing: 1px;
+ font-weight: 600;
+ font-size: larger;
+ color: #dfa974;
 }
