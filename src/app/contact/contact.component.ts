@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,12 +9,13 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
- email="dd"
- name="ee"
+ 
 
-  constructor() { }
+  constructor(private toastr: ToastrService) { }
 
   ngOnInit(): void {
   }
-
+pop(){this.toastr.success('check email', 'News letter');
+  
+}
 }

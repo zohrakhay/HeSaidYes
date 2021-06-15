@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  nums = [ 0, 1 , 2  ];
-  CompName =[ "Dresses" , "Suits" , "Honey-moon" ];
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+  FlyMe(){
+    
   }
 
 }

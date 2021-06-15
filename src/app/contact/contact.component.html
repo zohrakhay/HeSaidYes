@@ -1,63 +1,63 @@
-<section class="login-block">
+
+<section class="contact-section spad">
   <div class="container">
-<div class="row">
-  <div class="col-md-4 login-sec">
-      <h2 class="text-center">Contact Us</h2>
-      <form class="login-form" #loginFormulaire="ngForm">
-<div class="form-group" >
-  <label for="exampleInputEmail1" class="text-uppercase"> Email</label>
-  <input  #emailInput="ngModel" email required ngModel name="email" id="email" type="text" class="form-control" placeholder="">
-
-</div>
-<div class="alert alert-danger" *ngIf="emailInput.invalid && emailInput.touched">
- Your email is invalid
-
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="contact-text">
+                  <h2>Contact Info</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.</p>
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td class="c-o">Address:</td>
+                              <td>CUN Ariana INSAT</td>
+                          </tr>
+                          <tr>
+                              <td class="c-o">Phone:</td>
+                              <td>+216 54 654 807</td>
+                          </tr>
+                          <tr>
+                              <td class="c-o">Email:</td>
+                              <td>info@gmail.com</td>
+                          </tr>
+                         
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+              <form action="#" class="contact-form" #contactform="ngForm">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <input required
+                          #fnInput="ngModel"
+                           ngModel name="name"
+                           id="fn" type="text" placeholder="Your Name">
+                           <div class="alert alert-danger" *ngIf="fnInput.invalid && fnInput.touched">
+                            write your FirstName
+                      </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <input #emailInput="ngModel" email required ngModel name="email" id="email" type="email" placeholder="Your Email">
+                          <div class="alert alert-danger" *ngIf="emailInput.invalid && emailInput.touched">
+                            Your email is invalid
+                          </div>
+                        </div>
+                        
+                      
+                      <div class="col-lg-12">
+                        
+                          <button [disabled]="contactform.invalid" (click)="pop()" type="submit">Submit Now</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0606825994123!2d-72.8735845851828!3d40.760690042573295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e85b24c9274c91%3A0xf310d41b791bcb71!2sWilliam%20Floyd%20Pkwy%2C%20Mastic%20Beach%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1578582744646!5m2!1sen!2sbd"
+              height="470" style="border:0;" allowfullscreen=""></iframe>
+      </div>
   </div>
-<div class="form-group">
-  <label for="exampleInputFirstName" class="text-uppercase">FirstName</label>
-  <input
-     required
-     #fnInput="ngModel"
-      ngModel name="name"
-      id="fn"
-       type="text"
-       class="form-control"
-        placeholder="">
-</div>
-
-<div class="alert alert-danger" *ngIf="fnInput.invalid && fnInput.touched">
-write your FirstName
-
-</div>
-<div class="form-group">
-  <label for="exampleInputLastName" class="text-uppercase">lastName</label>
-  <input
-     required
-     #lnInput="ngModel"
-      ngModel name="name"
-      id="ln"
-       type="text"
-       class="form-control"
-        placeholder="">
-</div>
-
-<div class="alert alert-danger" *ngIf="lnInput.invalid && lnInput.touched">
-write your lastName
-</div>
-  <div class="form-check">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" >
-    <small>I want to receive a Newsletter</small>
-  </label>
-  <button [disabled]="loginFormulaire.invalid" type="submit" class="btn btn-login float-right"  >Submit</button>
-</div>
-
-</form>
-<div class="copy-text">Created with <i class="fa fa-heart"></i> by He said Yes !</div>
-  </div>
-  <div class="col-md-8 banner-sec">
-
-</div>
-</div>
-</div>
 </section>
