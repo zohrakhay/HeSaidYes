@@ -27,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SearchfilterPipe } from './searchfilter.pipe';
+import { SearchdatearrPipe } from './searchdatearr.pipe';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HomeComponent,
     ContactComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    SearchfilterPipe,
+    SearchdatearrPipe
   ],
   imports: [
     BrowserModule,

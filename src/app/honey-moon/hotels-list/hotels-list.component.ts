@@ -1,4 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { Hotel } from 'src/app/models/hotel';
 
 @Component({
@@ -7,7 +8,10 @@ import { Hotel } from 'src/app/models/hotel';
   styleUrls: ['./hotels-list.component.css']
 })
 export class HotelsListComponent implements OnInit {
-
+  model: NgbDateStruct;
+  searchValue: string;
+  searcharrDate: string;
+  searchdepDate: string;
   @Output()  hotel: Hotel;
   @Output()hotels = [
   {
@@ -18,7 +22,10 @@ export class HotelsListComponent implements OnInit {
     src4: './assets/img/reception/pexels-helena-lopes-3215519.jpg',
     src5: './assets/img/bathrooms/pexels-quark-studio-2507016.jpg',
     stars: 4,
-    price: 500
+    price: 500,
+    date_arrivée:'2021-06-25',
+    date_départ:'03/07/2021'
+
   },
   {
     name: 'Thalasso mannouba',
@@ -28,7 +35,9 @@ export class HotelsListComponent implements OnInit {
     src4: './assets/img/piscines/pexels-donald-tong-189296.jpg',
     src5: './assets/img/restaurants/pexels-andrea-piacquadio-3769740.jpg',
     stars: 3,
-    price: 300
+    price: 300,
+    date_arrivée:'2021-07-02',
+    date_départ:'06/07/2021'
   },
   {
     name: 'Thalasso marsa',
@@ -38,7 +47,9 @@ export class HotelsListComponent implements OnInit {
     src4: './assets/img/restaurants/pexels-andrea-piacquadio-3769740.jpg',
     src5: './assets/img/piscines/pexels-quark-studio-2506988.jpg',
     stars: 5,
-    price: 700
+    price: 700,
+    date_arrivée:'2021-08-02',
+    date_départ:'11/08/2021'
   },
   {
     name: 'Thalasso tozeur',
@@ -48,7 +59,9 @@ export class HotelsListComponent implements OnInit {
     src4: './assets/img/restaurants/pexels-rene-asmussen-3217156.jpg',
     src5: './assets/img/piscines/pexels-kindel-media-7294665.jpg',
     stars: 3,
-    price: 400
+    price: 400,
+    date_arrivée:'15/09/2021',
+    date_départ:'30/09/2021'
   },
 
   {
@@ -90,7 +103,7 @@ export class HotelsListComponent implements OnInit {
     stars: 3
   }
 ];
-
+ 
   constructor() { }
 
   ngOnInit(): void {
