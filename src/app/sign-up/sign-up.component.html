@@ -1,10 +1,9 @@
-
 <section class="login-block">
   <div class="container">
-<div class="row">
-  <div class="col-md-4 login-sec">
-      <h2 class="text-center">Login Now</h2>
-      <form class="login-form" #loginFormulaire="ngForm">
+
+  <div class=" login-sec">
+      <h2 class="text-center">Create an account</h2>
+      <form class="login-form" #signUpFormulaire="ngForm">
 
 <div class="form-group" >
   <label for="exampleInputEmail1" class="text-uppercase"> Email</label>
@@ -27,27 +26,20 @@
     class="form-control"
     placeholder="">
 </div>
-
 <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched">
-Password must have min 4 characters
-
+  Password must have min 4 characters
 </div>
+
   <div class="form-check">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" >
-    <small>Remember Me</small>
-  </label>
-  <button [disabled]="loginFormulaire.invalid" type="submit" class="btn btn-login float-right" (click)="login(loginFormulaire)" >Submit</button>
+
+  <button [disabled]="signUpFormulaire.invalid" type="submit" class="btn btn-login float-right"  (click)="signUp(signUpFormulaire)">Create an account</button>
 </div>
 
 </form>
-<div class="copy-text">You haven't an account ? <a class="fa fa-heart" routerLink="/sign-up">Create an account</a>
-  </div>
-  </div>
-  <div class="col-md-8 banner-sec">
 
-</div>
-</div>
+  </div>
+
+
 </div>
 </section>
 

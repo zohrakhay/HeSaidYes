@@ -25,7 +25,12 @@ export class LoginComponent implements OnInit {
          this.router.navigate(['/home']);
        },
        (erreur) => {
-         this.toaster.success(`Veuillez vérifier vos credentials`);
+         if ( erreur.status === 401 ){
+         this.toaster.error(`Incorrect Email/Password`);
+         }
+         else {
+          this.toaster.error(`Server Error`);
+         }
          console.log(erreur);
        }
      );

@@ -17,6 +17,10 @@ export class AuthentificationService {
     return this.http.post<any>(APIS.authentification + '/login', credentials);
   }
 
+  signUp(credentials): Observable<any>{
+    return this.http.post<any>(APIS.authentification, credentials);
+  }
+
   logout(): void {
     localStorage.removeItem('token');
   }
