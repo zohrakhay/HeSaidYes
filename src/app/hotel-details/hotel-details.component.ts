@@ -2,8 +2,8 @@ import { identifierModuleUrl } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgbCarouselConfig, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Hotel } from '../models/hotel';
-import { HotelsListService } from '../services/hotels-list.service';
+import { Hotel } from '../models/hotel/hotel';
+import { HotelsListService } from '../services/hotels/hotels-list.service';
 
 @Component({
   selector: 'app-hotel-details',
@@ -37,16 +37,20 @@ export class HotelDetailsComponent implements OnInit {
          console.log(params);
           this.id = params.get('id'); 
           let hotels=this._HotelService.getHotels();
-          this.hotel=this._HotelService.getHotel(this.id); 
+          this._HotelService.getHotel(this.id).subscribe(
+            (hotel) => this.hotel = hotel
+      );
+          //this.hotel=this._HotelService.getHotel(this.id); 
           //this.hotel=this.hotels.find(p => p.id==this.id); 
       
             
       });
-      console.log(this.id);
-      console.log(this.hotel);
+      //console.log(this.id);
+    
       
-      this.myimages=[this.hotel.src1, this.hotel.src2, this.hotel.src3, this.hotel.src4, this.hotel.src5];
-
+      //this.myimages=[this.hotel.src1, this.hotel.src2, this.hotel.src3, this.hotel.src4, this.hotel.src5];
+    // console.log(this.myimages);
+     
      
 
 }

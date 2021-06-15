@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Hotel } from './models/hotel';
+import { Hotel } from './models/hotel/hotel';
 
 @Pipe({
   name: 'searchdatearr'
@@ -13,7 +13,7 @@ export class SearchdatearrPipe implements PipeTransform {
 
     return hotels.filter(hotel =>
       
-        hotel.date_arrivée.includes(searchValue)
+        hotel.location.includes(searchValue)
       );
   }
 
