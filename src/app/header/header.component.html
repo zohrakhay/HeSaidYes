@@ -1,9 +1,9 @@
 
-  <nav class="navbar is-transparent">
+  <nav class="navbar is-transparent" [style.background-color]="color.colorPrimary" >
     <div class="navbar-brand">
-      <a class="navbar-item" >
-        <img  src="assets/img/logo.jpg"  style="width:75px;" alt="logo1" >
-      </a>
+      <div class="navbar-item" [style.color]="color.colorLight" style="font-weight:250; text-shadow: 5px; font-family: Wallington; font-size:25px">
+        heSaidyes!
+      </div>
       <div class="navbar-burger" data-target="navbarExampleTransparentExample">
         <span></span>
         <span></span>
@@ -13,31 +13,31 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item"  routerLink="/home">
+        <a class="navbar-item"  routerLink="/home" [style.color]="color.colorLightSecondary">
           Home
         </a>
-        <a class="navbar-item"  routerLink="/honey-moon">
+        <a class="navbar-item"  routerLink="/honey-moon" [style.color]="color.colorLightSecondary">
           Honey-moon
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" routerLink="/collections" >
+          <a class="navbar-link" routerLink="/collections" [style.color]="color.colorLightSecondary" >
             Collections
           </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" routerLink="/dresses" >
+          <div class="navbar-dropdown is-boxed " [style.background-color]="color.colorPrimary">
+            <a class="navbar-item" routerLink="/dresses" [style.background-color]="color.colorPrimary" [style.color]="color.colorLightSecondary">
               Dresses
             </a>
-            <a class="navbar-item" routerLink="/suits">
+            <a class="navbar-item" routerLink="/suits" [style.background-color]="color.colorPrimary" [style.color]="color.colorLightSecondary">
               Suits
             </a>
           </div>
         </div>
 
-        <a class="navbar-item"  routerLink="/contact">
+        <a class="navbar-item"  routerLink="/contact" [style.color]="color.colorLightSecondary">
           Contact
         </a>
 
-          <a  *ngIf="!authentificationService.isAuthentificated()"  routerLink="/login" class="navbar-item">
+          <a  *ngIf="!authentificationService.isAuthentificated()"  routerLink="/login" class="navbar-item" [style.color]="color.colorLightSecondary">
           Login
           </a>
           <a

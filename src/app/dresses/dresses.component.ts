@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { COLOR } from 'src/assets/color/colors';
 
 @Component({
   selector: 'app-dresses',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dresses.component.css']
 })
 export class DressesComponent implements OnInit {
+
+  color= COLOR;
 
   constructor() { }
 

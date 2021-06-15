@@ -48,8 +48,8 @@ header .overlay {
 }
 
 .aboutus-page-section {
-	padding-top: 0;
-	padding-bottom: 70px;
+	padding-top: 70px;
+	padding-bottom: 25px;
 }
 .about-page-text {
 	margin-bottom: 65px;
@@ -95,7 +95,6 @@ header .overlay {
 }
 .services-section {
 	padding-bottom: 60px;
-	border-top: 1px solid #e5e5e5;
 }
 .services-section .section-title {
 	margin-bottom: 36px;
