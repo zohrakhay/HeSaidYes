@@ -7,5 +7,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'HeSaidYes';
+  colorPrimary="#042A38";
+  colorSecondary="#ff8d1e";
+  colorLight="#F7F5EB";
+  colorLightSecondary="#B32442";
 
 }

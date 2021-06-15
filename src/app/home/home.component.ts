@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  nums = [ 0, 1 , 2  ];
+  colorPrimary="#042A38";
+  colorSecondary="#ff8d1e";
+  colorLight="#dfa974";
+  colorLightSecondary='#f7f5eb';
+
   CompName =[ "Dresses" , "Suits" , "Honey-moon" ];
   constructor() { }
 

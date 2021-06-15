@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { COLOR } from 'src/assets/color/colors';
 import { AuthentificationService } from '../services/authentification/authentification.service';
+
 
 @Component({
   selector: 'app-header',
@@ -9,6 +11,7 @@ import { AuthentificationService } from '../services/authentification/authentifi
 })
 export class HeaderComponent implements OnInit {
 
+  color=COLOR
   constructor(
     public  authentificationService: AuthentificationService,
     private router: Router

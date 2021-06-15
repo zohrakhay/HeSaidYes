@@ -4,3 +4,11 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "../node_modules/ngx-toastr/toastr.css";
 @import "~font-awesome/css/font-awesome.css";
+@font-face {
+    font-family: "Lovelyn";
+    src: url(./assets/fonts/Lovelyn.ttf);
+}
+@font-face {
+    font-family: "Wallington";
+    src: url(./assets/fonts/Wallington.ttf);
+}
