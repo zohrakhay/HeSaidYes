@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Hotel } from './models/hotel';
+import { Hotel } from './models/hotel/hotel';
 
 @Pipe({
   name: 'searchfilter'
@@ -13,7 +13,7 @@ export class SearchfilterPipe implements PipeTransform {
 
     return hotels.filter(hotel =>
       
-        hotel.name.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
+        hotel.location.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
       );
   }
 

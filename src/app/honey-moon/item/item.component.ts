@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { NgbCarouselConfig, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Hotel } from 'src/app/models/hotel';
+import { Hotel } from 'src/app/models/hotel/hotel';
 
 @Component({
   selector: 'app-item',
