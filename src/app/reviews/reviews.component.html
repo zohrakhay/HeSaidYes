@@ -7,10 +7,8 @@
         </div>
         <div class="ri-text">
             <span>27 Aug 2019</span>
-            <ngb-rating rate=5>
-              <ng-template let-fill="fill" let-index="index">
-                <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
-              </ng-template>
+            <ngb-rating class="filled" rate=5>
+            
             </ngb-rating>
             <h5>Brandon Kelley</h5>
             <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
@@ -24,10 +22,8 @@
         </div>
         <div class="ri-text">
             <span>27 Aug 2019</span>
-            <ngb-rating rate=4>
-              <ng-template let-fill="fill" let-index="index">
-                <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
-              </ng-template>
+            <ngb-rating class="filled" rate=4>
+            
             </ngb-rating>
             <h5>Brandon Kelley</h5>
             <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur,
@@ -35,32 +31,68 @@
                 magnam.</p>
         </div>
     </div>
+
+    <div [reviews]="reviews" *ngIf="reviews.length" >
+    <div *ngFor="let review of reviews" class="review-item">
+      <div class="ri-pic">
+          <img src="assets/img/Reviews/avatar.jpg" alt="">
+      </div>
+      <div class="ri-text">
+          <span>{{currentDate | date:'dd MMM y'}}</span>
+
+          <ngb-rating class="filled" rate={{review.rating}}>
+          </ngb-rating>
+
+          <h5>{{review.name}}</h5>
+          <p>{{review.commentaire}}</p>
+      </div>
+  </div>
+</div>
 </div>
 <div class="review-add" *ngIf="authentificationService.isAuthentificated()" >
     <h4>Add Review</h4>
-    <form action="#" class="ra-form">
+    <form action="#" class="ra-form" #ReviewsForm="ngForm" (ngSubmit)="addReviews(ReviewsForm)">
         <div class="row">
-            <div class="col-lg-6">
-                <input type="text" placeholder="Name*">
-            </div>
-            <div class="col-lg-6">
-                <input type="text" placeholder="Email*">
-            </div>
             <div class="col-lg-12">
-                <div>
-                  <div class="row">
-                   <h5> Your Rating:</h5>
-                   <ngb-rating rate=0>
+                <input #nameInput="ngModel" required ngModel name="name" type="text" placeholder="Name*">
+            </div>
+
+      
+
+            <div class="alert alert-danger" *ngIf="nameInput.invalid && nameInput.touched">
+             Please add your name
+             
+             
+               </div>
+
+               <div class="rating col-lg-2">Your Rating</div> 
+            <div class="col-lg-10">
+               
+              <ngb-rating ngModel name="rating" [(rate)]="selected" (hover)="hovered=$event" (leave)="hovered=0" [readonly]="readonly"></ngb-rating>
+              <hr>
+              <br>
+             <!-- <pre>
+              Selected: <b>{{selected}}</b>
+              Hovered: <b>{{hovered}}</b>
+              </pre>-->
+                   <!--<ngb-rating rate=0>
                     <ng-template let-fill="fill" let-index="index">
                       <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
                     </ng-template>
-                  </ngb-rating>
-                </div>
+                  </ngb-rating>-->
+                
 
                 </div>
-                <textarea placeholder="Your Review"></textarea>
-                <button type="submit">Submit Now</button>
-            </div>
+
+                
+                <textarea #comInput="ngModel" minlength="4" name="commentaire" required ngModel placeholder="Your Review"></textarea>
+                <div class="alert alert-danger" *ngIf="comInput.invalid && comInput.touched">
+                  Your review must have a minimum of 4 caracters to be relevant
+                  
+                  </div>
+                <button [disabled]="ReviewsForm.invalid" type="submit" class='btn btn-default'>Submit Now</button>
+            
+          
         </div>
     </form>
 </div>
