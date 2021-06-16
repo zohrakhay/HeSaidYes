@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpHeaders } from '@angular/common/http';
+import { Component, Injectable, OnInit, Type } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { HttpClient } from '@angular/common/http';
+
+
 
 
 @Component({
@@ -8,14 +12,28 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+@Injectable()
 export class ContactComponent implements OnInit {
  
-
-  constructor(private toastr: ToastrService) { }
+ 
+  constructor(private toastr: ToastrService,private http: HttpClient) { }
 
   ngOnInit(): void {
   }
-pop(){this.toastr.success('check email', 'News letter');
-  
-}
-}
+    pop()
+    {
+      this.toastr.success('You are subscribed to our news letter', 'Great');
+   }
+   onSubmit(contactForm: NgForm) {
+    if (contactForm.valid) {
+      const email = contactForm.value;
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+      this.http.post('https://formspree.io/asdlf7asdf',
+        { name: email.fn, replyto: email.email },
+        { 'headers': headers }).subscribe(
+          response => {
+            console.log(response);
+          }
+        );
+    }
+  }}
