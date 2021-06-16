@@ -14,17 +14,17 @@ import { HttpClient } from '@angular/common/http';
 })
 @Injectable()
 export class ContactComponent implements OnInit {
- 
- 
+
+
   constructor(private toastr: ToastrService,private http: HttpClient) { }
 
   ngOnInit(): void {
   }
-    pop()
+    pop(): void
     {
       this.toastr.success('You are subscribed to our news letter', 'Great');
    }
-   onSubmit(contactForm: NgForm) {
+   onSubmit(contactForm: NgForm): void {
     if (contactForm.valid) {
       const email = contactForm.value;
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
