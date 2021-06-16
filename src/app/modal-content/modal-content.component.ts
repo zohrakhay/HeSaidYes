@@ -22,7 +22,7 @@ export class ModalContentComponent implements OnInit {
   }
 
 toast(): void{
-  this.toaster.success(`Success`);
+  this.toaster.success(`Your appointment is registered`);
   this.activeModal.close('Close click');
 
 

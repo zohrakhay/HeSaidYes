@@ -1,1 +1,1 @@
-<a  class="booking" (click)="openModal()" *ngIf="authentificationService.isAuthentificated()">Book an appointment</a>
+<a  class="booking" (click)="openModal()" *ngIf="authentificationService.isAuthentificated() && !authentificationService.isAdmin()">Book an appointment</a>
