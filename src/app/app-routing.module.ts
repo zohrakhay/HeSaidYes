@@ -26,21 +26,24 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component : LoginComponent
+    component : LoginComponent,
+
+
   },
   {
     path: 'add-dress',
     component :  AddDressComponent,
-    canActivate: [  AdminGuard ]
+    canActivate: [  AdminGuard, AuthGuard ]
   },
   {
     path: 'add-suit',
     component :  AddSuitComponent,
-    canActivate: [ AdminGuard ]
+    canActivate: [ AdminGuard, AuthGuard ]
   },
   {
     path: 'sign-up',
     component : SignUpComponent
+
   },
 
 {
