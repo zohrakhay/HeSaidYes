@@ -134,11 +134,15 @@
 
 .guests{
     padding-top: 55px;
-    margin: 55px;
+    margin: 60px;
 	font-family: "Wallington";
 	font-weight: 600;
 	font-size: 25px;
 	color: #dfa974;
+}
+
+.our{
+	margin-bottom: 100px;
 }
 
 .star {
@@ -153,7 +157,7 @@
   }
 
   .center{
-	  
+	text-align: center;
 	  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,10 +169,35 @@
   display: inline-block;
   }
 
-  .map {
-	  margin: 50px;
-	height: 470px;
-	-webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
-	box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
-	margin-top: 75px;
-}
+  .namestyle {
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.2em;
+	text-transform: uppercase;
+	font-family: "Times New Roman", Times, serif;
+  }
+  .sz{
+	font-size:30px;
+	font-weight: 200;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	font-family: "Times New Roman", Times, serif;
+  }
+  .sz2{
+	font-size: 17px;
+	font-weight: 200;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	font-family: "Times New Roman", Times, serif;
+  }
+
+  .sz3{
+	font-size:50px;
+	font-weight: 200;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	font-family: "Times New Roman", Times, serif;
+  }

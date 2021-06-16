@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   colorPrimary="#042A38";
-  colorSecondary="#ff8d1e";
+  colorSecondary="#dfa974";
   colorLight="#dfa974";
   colorLightSecondary='#f7f5eb';
 

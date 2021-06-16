@@ -60,51 +60,42 @@
     <!--TAHT E TASWIRA-->
     <div class="rd-text">
         <div class="rd-title">
-            <h3>{{hotel.name}}</h3>
+            <h3 class="namestyle">{{hotel.name}}</h3>
             
             <div class="rdt-right">
                 <!--hot stars-->
                 <a class='btn btn-default' (click)="onBack()">Back to Hotels List</a>
             </div>
         </div>
-        <h2>{{hotel.price}}$<span>/Pernight</span></h2>
+        <h2 class="sz">{{hotel.price}}$<span class="sz2">/Pernight</span></h2>
         <table>
             <tbody>
                 <tr>
-                    <td class="r-o" [style.color]="color.colorPrimary">Adresse:</td>
-                    <td>Hôtel iberostar Selection Kuriat palace Zone touristique، Dkhila 5060</td>
-                    <td class="r-o"[style.color]="color.colorPrimary">Location:</td>
+                   
+   
+                    <td class="sz3"[style.color]="color.colorPrimary">Location:</td>
                     <td><i class="fa fa-map-marker" aria-hidden="true"></i>
 
                     {{hotel.location}}
                 </td>
                 </tr>
                 <tr>
-                    <td class="r-o" [style.color]="color.colorPrimary">Telephone:</td>
+                    <td class="r-o sz3" [style.color]="color.colorPrimary">Telephone:</td>
                     <td>71689146</td>
                 </tr>
                 <tr>
-                    <td class="r-o" [style.color]="color.colorPrimary">Bed:</td>
+                    <td class="r-o sz3" [style.color]="color.colorPrimary">Bed:</td>
                     <td>King Beds</td>
                 </tr>
                 <tr>
-                    <td class="r-o" [style.color]="color.colorPrimary">Services:</td>
+                    <td class="r-o sz3" [style.color]="color.colorPrimary">Services:</td>
                     <td>Wifi, Television, Bathroom,...</td>
                 </tr>
             </tbody>
         </table>
-        <p class="f-para">Motorhome or Trailer that is the question for you. Here are some of the
-            advantages and disadvantages of both, so you will be confident when purchasing an RV.
-            When comparing Rvs, a motorhome or a travel trailer, should you buy a motorhome or fifth
-            wheeler? The advantages and disadvantages of both are studied so that you can make your
-            choice wisely when purchasing an RV. Possessing a motorhome or fifth wheel is an
-            achievement of a lifetime. It can be similar to sojourning with your residence as you
-            search the various sites of our great land, America.
-            
-            The two commonly known recreational vehicle classes are the motorized and towable.
-            Towable rvs are the travel trailers and the fifth wheel. The rv travel trailer or fifth
-            wheel has the attraction of getting towed by a pickup or a car, thus giving the
-            adaptability of possessing transportation for you when you are parked at your campsite.
+        <p class="f-para">Have you decided where your next holiday will be? If you intend to enjoy a holiday in Douz, Thalasso Douz hotel promises unbeatable moments. It is perfect for romance. It is a fun-filled choice for lovers; is just steps away from some of the most interesting places in Douz. You can also relax in the spa and lush green gardens. It is  a destination where you will live the most beautiful experiences and unforgettable moments.
+            Indulge yourself in our comfortable rooms. You will discover the Première Classe experience from the moment you arrive. Bright, modern spaces. Everything you need for a good night's sleep at a low price.
+
         </p>
     </div>
 
@@ -137,16 +128,15 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
-                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                          </svg>
+                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
                         <h4>Travel Plan</h4>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="service-item">
-                        <i class="fas fa-baby"></i>
+                        <i class="fa fa-child" aria-hidden="true"></i>
+
                         <h4>Babysitting</h4>
                        
                     </div>
@@ -173,9 +163,8 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                     <div class="service-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
-                            <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
-                          </svg>
+                        <i class="fa fa-glass" aria-hidden="true"></i>
+
                         <h4>Bar &amp; Drink</h4>
                     
                     </div>
@@ -196,17 +185,10 @@
        
 </div>
 
-<div class="map">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0606825994123!2d-72.8735845851828!3d40.760690042573295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e85b24c9274c91%3A0xf310d41b791bcb71!2sWilliam%20Floyd%20Pkwy%2C%20Mastic%20Beach%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1578582744646!5m2!1sen!2sbd"
-        height="470" style="border:0;" allowfullscreen=""></iframe>
-</div>
-
-
 </div>
 
 <div>
-    <span class="guests">  Our guests love us! </span>
+    <span class="guests our">  Our guests love us! </span>
     <app-reviews></app-reviews>
 </div>
 

@@ -14,12 +14,16 @@
   padding: 50px 0;
 }
 .banner-sec {
-  background: url("/assets/img/Collections/collection-cover.jpg") no-repeat left
+  background: url("/assets/img/login/login1.jpg") no-repeat left
     bottom;
-  background-size: cover;
+  
   min-height: 500px;
   border-radius: 0 10px 10px 0;
   padding: 0;
+  background-position: center center;
+  overflow: "hidden";
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container {
   background: #fff;
