@@ -18,5 +18,17 @@ export class DressService {
   getDresses(): Observable<Dress[]>{
     return this.http.get<Dress[]>(APIS.dresses);
   }
+addDress(dress: Dress): Observable<any>{
 
+  return this.http.post<any>(APIS.dresses, dress);
+
+
+}
+
+
+
+deleteDress(id: number): Observable<any>{
+return this.http.delete(APIS.dresses + `/${id}` );
+
+}
 }

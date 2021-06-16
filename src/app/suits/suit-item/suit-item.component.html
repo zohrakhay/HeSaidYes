@@ -5,5 +5,7 @@
           <h2 class="content-title">Price : {{suit.price}} $</h2>
 
   <h1><app-modal-component ></app-modal-component></h1>
+  <button  type="button" class="btn btn-sm btn-outline-secondary" *ngIf="authentificationService.isAuthentificated() && authentificationService.isAdmin()" (click)="delete(suit.id)">Delete</button>
+
       </div>
    </div>

@@ -11,7 +11,7 @@ import { AuthentificationService } from '../services/authentification/authentifi
 })
 export class HeaderComponent implements OnInit {
 
-  color=COLOR
+  color = COLOR;
   constructor(
     public  authentificationService: AuthentificationService,
     private router: Router

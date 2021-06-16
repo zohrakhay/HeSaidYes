@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal,   } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-modal-content',
@@ -10,7 +11,7 @@ export class ModalContentComponent implements OnInit {
 
   @Input() name;
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal, private toaster: ToastrService) {}
 
   close(): void{
 
@@ -19,5 +20,13 @@ export class ModalContentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+toast(): void{
+  this.toaster.success(`Success`);
+  this.activeModal.close('Close click');
+
+
+
+}
 
 }

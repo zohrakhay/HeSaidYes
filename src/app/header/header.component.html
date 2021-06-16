@@ -36,6 +36,13 @@
         <a class="navbar-item"  routerLink="/contact" [style.color]="color.colorLightSecondary">
           Contact
         </a>
+        <a      *ngIf="authentificationService.isAuthentificated() && authentificationService.isAdmin()" class="navbar-item"  routerLink="/add-dress" [style.color]="color.colorLightSecondary">
+          add Dress
+        </a>
+        <a      *ngIf="authentificationService.isAuthentificated() && authentificationService.isAdmin()" class="navbar-item"  routerLink="/add-suit" [style.color]="color.colorLightSecondary">
+          add Suit
+        </a>
+
 
           <a  *ngIf="!authentificationService.isAuthentificated()"  routerLink="/login" class="navbar-item" [style.color]="color.colorLightSecondary">
           Login
@@ -44,6 +51,7 @@
           *ngIf="authentificationService.isAuthentificated()"
           class="navbar-item"
           (click)="logOut()"
+          [style.color]="color.colorLightSecondary"
           >
             LogOut
             </a>

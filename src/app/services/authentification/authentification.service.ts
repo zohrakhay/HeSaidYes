@@ -7,6 +7,8 @@ import { APIS } from 'src/app/constantes/api';
   providedIn: 'root'
 })
 export class AuthentificationService {
+  admin: boolean;
+  email = 'hesaidyes@gmail.com';
 
   constructor(
     private http: HttpClient
@@ -14,6 +16,7 @@ export class AuthentificationService {
   ) { }
 
   login(credentials): Observable<any>{
+    this.admin = this.email === credentials.email ;
     return this.http.post<any>(APIS.authentification + '/login', credentials);
   }
 
@@ -28,4 +31,10 @@ export class AuthentificationService {
   isAuthentificated(): boolean {
     return !!localStorage.getItem('token');
   }
+
+isAdmin(): boolean{
+  return this.admin;
+
+}
+
 }

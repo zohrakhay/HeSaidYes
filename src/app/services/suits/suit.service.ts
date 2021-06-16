@@ -19,4 +19,13 @@ export class SuitService {
     return this.http.get<Suit[]>(APIS.suits);
   }
 
+  addSuit(suit: Suit): Observable<any>{
+
+    return this.http.post<any>(APIS.suits, suit);
+
+  }
+  deleteSuit(id: number): Observable<any>{
+  return this.http.delete(APIS.suits + `/${id}` );
+  }
+
 }

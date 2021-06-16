@@ -24,8 +24,15 @@ export class SignUpComponent implements OnInit {
         this.router.navigate(['/home']);
       },
       (erreur) => {
-         this.toaster.error(`Server Error`);
-         console.log(erreur);
+        if ( erreur.status === 422 ){
+          this.toaster.error(`Email exists. Choose another email`);
+          }
+          else {
+
+            this.toaster.error(`Server Error`);
+            console.log(erreur);
+          }
+
       }
     );
   }

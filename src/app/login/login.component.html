@@ -37,11 +37,11 @@ Password must have min 4 characters
     <input type="checkbox" class="form-check-input" >
     <small>Remember Me</small>
   </label>
-  <button [disabled]="loginFormulaire.invalid" type="submit" class="btn btn-login float-right" (click)="login(loginFormulaire)" >Submit</button>
+  <button [disabled]="loginFormulaire.invalid" type="submit" class="btn btn-login float-right"  (click)="login(loginFormulaire)" >Submit</button>
 </div>
 
 </form>
-<div class="copy-text">You haven't an account ? <a class="fa fa-heart" routerLink="/sign-up">Create an account</a>
+<div class="copy-text">You haven't an account ? <a  routerLink="/sign-up">Create an account</a>
   </div>
   </div>
   <div class="col-md-8 banner-sec">

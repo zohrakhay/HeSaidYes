@@ -16,8 +16,7 @@ export class HotelsListService {
     this.hotels=[];
 
    }
-   
-  public getHotels(): Observable<Hotel[]>{
+     public getHotels(): Observable<Hotel[]>{
     return this.http.get<Hotel[]>(APIS.hotels);
   }
 
@@ -28,8 +27,6 @@ export class HotelsListService {
   return hotels.find(p => p.id==id);
 }*/
 public getHotel(id): Observable<Hotel>{
-  
   return this.http.get<Hotel>(APIS.hotels + `/${id}`);
 }
-  
 }

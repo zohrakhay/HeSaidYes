@@ -29,6 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SearchfilterPipe } from './searchfilter.pipe';
 import { SearchdatearrPipe } from './searchdatearr.pipe';
+import { AddDressComponent } from './add-dress/add-dress.component';
+import { AddSuitComponent } from './add-suit/add-suit.component';
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { SearchdatearrPipe } from './searchdatearr.pipe';
     LoginComponent,
     SignUpComponent,
     SearchfilterPipe,
-    SearchdatearrPipe
+    SearchdatearrPipe,
+    AddDressComponent,
+    AddSuitComponent
   ],
   imports: [
     BrowserModule,

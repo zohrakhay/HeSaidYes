@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalContentComponent } from '../modal-content/modal-content.component';
+import { AuthentificationService } from '../services/authentification/authentification.service';
 
 @Component({
   selector: 'app-modal-component',
@@ -9,7 +10,7 @@ import { ModalContentComponent } from '../modal-content/modal-content.component'
 })
 export class ModalComponentComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal, public  authentificationService: AuthentificationService) {}
 
 
 openModal(): void {

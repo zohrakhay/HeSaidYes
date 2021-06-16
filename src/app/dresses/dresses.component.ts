@@ -8,7 +8,7 @@ import { COLOR } from 'src/assets/color/colors';
 })
 export class DressesComponent implements OnInit {
 
-  color= COLOR;
+  color = COLOR;
 
   constructor() { }
 
