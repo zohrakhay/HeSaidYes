@@ -43,7 +43,7 @@
           <a
           *ngIf="authentificationService.isAuthentificated()"
           class="navbar-item"
-          (click)="logOut()"
+          (click)="logOut()" [style.color]="color.colorLightSecondary"
           >
             LogOut
             </a>

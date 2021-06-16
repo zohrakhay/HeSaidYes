@@ -1,7 +1,7 @@
 .hero {
   background-image: url("/assets/img/Collections/collection-cover.jpg") !important;
   background-size: cover;
-  background-position: center center;
+  background-position: 75% 100%;
 }
 .hero title {
   text-align: center center center center;
@@ -23,11 +23,12 @@
 .primary-btn {
   display: inline-block;
   font-size: 13px;
-  color: #19191a;
+  color: #042A38;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   position: relative;
+  font-family: "Lovelyn";
 }
 .collectionSum {
   height: 20%;
@@ -51,4 +52,9 @@
 .collectionSum a {
   text-align: center center;
   padding-top: 50 px;
+}
+
+h2{
+  font-family: "Wallington";
+  color: #dfa974;
 }

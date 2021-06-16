@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { COLOR } from 'src/assets/color/colors';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactComponent implements OnInit {
  
-
+  color=COLOR;
   constructor(private toastr: ToastrService) { }
 
   ngOnInit(): void {
