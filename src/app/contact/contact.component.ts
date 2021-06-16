@@ -15,8 +15,8 @@ import { COLOR } from 'src/assets/color/colors';
 })
 @Injectable()
 export class ContactComponent implements OnInit {
- 
-  color=COLOR;
+
+  color = COLOR;
   constructor(private toastr: ToastrService,private http: HttpClient) { }
 
   ngOnInit(): void {
