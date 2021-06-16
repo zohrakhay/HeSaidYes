@@ -112,5 +112,11 @@
   color: #b0c4de;
 }
 .filled {
-  color: #1e90ff;
+  color: #dfa974;
+}
+
+.rating {
+  font-weight: 600;
+  font-size: 20px;
+  color: #19191a;
 }
