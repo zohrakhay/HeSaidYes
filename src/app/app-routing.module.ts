@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AddDressComponent } from './add-dress/add-dress.component';
 import { AddSuitComponent } from './add-suit/add-suit.component';
+import { AuthGuard } from './guards/login.guard';
+import { AdminGuard } from './guards/admin.guard';
 
 const routes: Routes = [
 
@@ -28,11 +30,13 @@ const routes: Routes = [
   },
   {
     path: 'add-dress',
-    component :  AddDressComponent
+    component :  AddDressComponent,
+    canActivate: [  AdminGuard ]
   },
   {
     path: 'add-suit',
-    component :  AddSuitComponent
+    component :  AddSuitComponent,
+    canActivate: [ AdminGuard ]
   },
   {
     path: 'sign-up',
