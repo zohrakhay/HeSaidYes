@@ -94,6 +94,8 @@
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	color: #042A38;
+	font-family: "Lovelyn";
 }
 .service-item:hover {
 	background: #dfa974;
@@ -131,13 +133,12 @@
 }
 
 .guests{
-	margin-bottom: 50px;
+    padding-top: 55px;
     margin: 55px;
-	color: #19191a;
-  letter-spacing: 1px;
- font-weight: 600;
- font-size: larger;
- color: #dfa974;
+	font-family: "Wallington";
+	font-weight: 600;
+	font-size: 25px;
+	color: #dfa974;
 }
 
 .star {

@@ -5,6 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 import { HttpClient } from '@angular/common/http';
 
 
+import { COLOR } from 'src/assets/color/colors';
 
 
 @Component({
@@ -15,7 +16,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class ContactComponent implements OnInit {
  
- 
+  color=COLOR;
   constructor(private toastr: ToastrService,private http: HttpClient) { }
 
   ngOnInit(): void {

@@ -2,6 +2,7 @@ import { identifierModuleUrl } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgbCarouselConfig, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { COLOR } from 'src/assets/color/colors';
 import { Hotel } from '../models/hotel/hotel';
 import { HotelsListService } from '../services/hotels/hotels-list.service';
 
@@ -15,6 +16,8 @@ export class HotelDetailsComponent implements OnInit {
   @Input() hotels: Hotel[];
   id;
   @Input() hotel: Hotel;
+
+  color=COLOR;
     
   showNavigationArrows = false;
   showNavigationIndicators = false;

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
+import { COLOR } from 'src/assets/color/colors';
 import { AuthentificationService } from '../services/authentification/authentification.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { AuthentificationService } from '../services/authentification/authentifi
   providers: [NgbRatingConfig]
 })
 export class ReviewsComponent implements OnInit {
+  color=COLOR;
   currentDate= new Date();
   selected = 0;
   hovered = 0;
