@@ -11,15 +11,14 @@ import { COLOR } from 'src/assets/color/colors';
 })
 export class HotelsListComponent implements OnInit {
 
-  color=COLOR;
+  color = COLOR;
   model: NgbDateStruct;
   searchValue: string;
   searcharrDate: string;
   searchdepDate: string;
   @Output()  hotel: Hotel;
   @Output()hotels = [];
-  constructor(private HotelService:HotelsListService) { 
-    
+  constructor(private HotelService: HotelsListService) {
   }
 
   ngOnInit(): void {

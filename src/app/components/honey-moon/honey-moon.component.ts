@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
-import { Hotel } from '../models/hotel/hotel';
+import { Hotel } from 'src/app/models/hotel/hotel';
 
 @Component({
   selector: 'app-honey-moon',

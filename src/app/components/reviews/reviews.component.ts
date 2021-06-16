@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { COLOR } from 'src/assets/color/colors';
-import { AuthentificationService } from '../services/authentification/authentification.service';
+import { AuthentificationService } from 'src/app/services/authentification/authentification.service';
 
 @Component({
   selector: 'app-reviews',
@@ -11,33 +11,34 @@ import { AuthentificationService } from '../services/authentification/authentifi
   providers: [NgbRatingConfig]
 })
 export class ReviewsComponent implements OnInit {
-  color=COLOR;
-  currentDate= new Date();
+  color = COLOR;
+  currentDate = new Date();
   selected = 0;
   hovered = 0;
   readonly = false;
- review= {"name": "x",
- "rating": 0,
-    " com": "this website is amazing"};
+ review = {
+   'name' : 'x',
+ 'rating': 0,
+    ' com': 'this website is amazing'};
 
-  reviews= [];
+  reviews = [];
   constructor(rtconfig: NgbRatingConfig, public  authentificationService: AuthentificationService) {
     rtconfig.max = 5;
     rtconfig.readonly = true;
    }
 
   ngOnInit(): void {
-  
-    
+
+
   }
 
-  addReviews(form:NgForm): void{
-    const com=form.value;
+  addReviews(form: NgForm): void{
+    const com = form.value;
     console.log(com);
-    
-  this.reviews.push(com);
-  console.log(this.reviews); 
-  //form.clear(); }
+
+    this.reviews.push(com);
+    console.log(this.reviews);
+
 
 }
 }

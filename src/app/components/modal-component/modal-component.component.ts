@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalContentComponent } from '../modal-content/modal-content.component';
-import { AuthentificationService } from '../services/authentification/authentification.service';
+import { AuthentificationService } from 'src/app/services/authentification/authentification.service';
 
 @Component({
   selector: 'app-modal-component',

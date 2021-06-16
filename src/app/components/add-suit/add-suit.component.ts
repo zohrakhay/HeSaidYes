@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { SuitService } from '../services/suits/suit.service';
+import { SuitService } from 'src/app/services/suits/suit.service';
 
 @Component({
   selector: 'app-add-suit',

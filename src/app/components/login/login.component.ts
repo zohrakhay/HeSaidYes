@@ -3,7 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { isNamedExportBindings } from 'typescript';
-import { AuthentificationService } from '../services/authentification/authentification.service';
+import { AuthentificationService } from 'src/app/services/authentification/authentification.service';
 
 @Component({
   selector: 'app-login',

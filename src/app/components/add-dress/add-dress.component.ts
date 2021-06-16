@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DressService } from '../services/dresses/dress.service';
+import { DressService } from 'src/app/services/dresses/dress.service';
 
 @Component({
   selector: 'app-add-dress',

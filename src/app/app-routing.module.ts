@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CollectionsComponent } from './collections/collections.component';
-import { DressesComponent } from './dresses/dresses.component';
-import { HoneyMoonComponent } from './honey-moon/honey-moon.component';
-import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
-import { LoginComponent } from './login/login.component';
-import { SuitsComponent } from './suits/suits.component';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { AddDressComponent } from './add-dress/add-dress.component';
-import { AddSuitComponent } from './add-suit/add-suit.component';
+
+
 import { AuthGuard } from './guards/login.guard';
 import { AdminGuard } from './guards/admin.guard';
+import { HomeComponent } from './components/home/home.component';
+import { HoneyMoonComponent } from './components/honey-moon/honey-moon.component';
+import { LoginComponent } from './components/login/login.component';
+import { AddDressComponent } from './components/add-dress/add-dress.component';
+import { AddSuitComponent } from './components/add-suit/add-suit.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { CollectionsComponent } from './components/collections/collections.component';
+import { DressesComponent } from './components/dresses/dresses.component';
+import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
+import { SuitsComponent } from './components/suits/suits.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthentificationService } from 'src/app/services/authentification/authentification.service';
 import { COLOR } from 'src/assets/color/colors';
-import { AuthentificationService } from '../services/authentification/authentification.service';
 
 
 @Component({

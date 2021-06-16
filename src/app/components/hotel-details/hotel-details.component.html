@@ -5,7 +5,6 @@
     <div class="col-sm-8">
 <div class="room-details-item">
     <div>
-       <!--<img src="/assets/img/bedrooms/pexels-max-vakhtbovych-6284232.jpg" alt=""> -->
 
        <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
         <ng-template ngbSlide>
@@ -13,10 +12,6 @@
             <img src="{{hotel.src1}}" alt="Random slide">
           </div>
 
-         <!-- <div class="carousel-caption">
-            <h3>No mouse navigation</h3>
-            <p>This carousel hides navigation arrows and indicators.</p>
-          </div>-->
         </ng-template>
         <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
@@ -57,13 +52,11 @@
     </div>
 
 
-    <!--TAHT E TASWIRA-->
     <div class="rd-text">
         <div class="rd-title">
             <h3 class="namestyle">{{hotel.name}}</h3>
 
             <div class="rdt-right">
-                <!--hot stars-->
                 <a class='btn btn-default' (click)="onBack()">Back to Hotels List</a>
             </div>
         </div>
